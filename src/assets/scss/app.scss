@@ -1,9 +1,7 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-
 @include foundation-global-styles;
 //@include foundation-grid;
 @include foundation-flex-grid;
@@ -46,15 +44,18 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 @include foundation-flex-classes;
-
 @include motion-ui-transitions;
 @include motion-ui-animations;
- @import 'components/helpers';
- @import 'components/owl.carousel';
- @import 'components/owl.theme.default';
+@import 'components/helpers';
+@import 'components/owl.carousel';
+@import 'components/owl.theme.default';
 
+#siteContainer{
+    position: relative;
+}
 #siteNavStickyWrap {
     width: 100%;
+    max-width: 100%;
 }
 
 .top-bar {
@@ -62,26 +63,36 @@
     padding: 0;
     display: flex;
     align-items: center;
-  
 }
-.nav-container{
-            width: 100%;
-        text-align: center;
- &>ul {
-     background-color: transparent;
- }
+
+.nav-container {
+    width: 100%;
+    text-align: center;
+    &>ul {
+        background-color: transparent;
+    }
 }
 
 .top-black-bar {
     background-color: black;
-        color: rgba(255, 255, 255, 0.71);
+    color: rgba(255, 255, 255, 0.71);
     padding: 0.2rem 1rem;
     font-size: 0.7rem;
 }
-.top-bar-title{
+
+.top-bar-title {
     padding: 0.5rem;
-    img{
-        width:100px;
-        height:auto;
+    img {
+        width: 100px;
+        height: auto;
     }
+}
+.header-dropdown-title{
+margin: 0 1rem;
+color: white;
+}
+
+
+.header-dropdown{
+    background-color: transparent;
 }

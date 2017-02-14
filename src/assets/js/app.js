@@ -5,8 +5,7 @@ $('.owl-carousel').owlCarousel({
     autoplay:true,
     responsive: {
         0: {
-            items: 1,
-            nav: true
+            items: 1
         }
     }
 })
