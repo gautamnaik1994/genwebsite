@@ -57,6 +57,12 @@
     width: 100%;
     max-width: 100%;
 }
+#siteNavStickyContainer{
+        position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 
 .top-bar {
     background-color: transparent;
@@ -92,7 +98,7 @@ margin: 0 1rem;
 color: white;
 }
 
-
 .header-dropdown{
     background-color: transparent;
 }
+

@@ -254,7 +254,8 @@ $dropdown-radius: $global-radius;
 $dropdown-sizes: ( tiny: 100px, small: 200px, large: 400px, );
 // 18. Dropdown Menu
 // -----------------
-$dropdownmenu-arrows: true;
+// $dropdownmenu-arrows: true;
+$dropdownmenu-arrows: false;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
