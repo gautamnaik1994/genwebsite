@@ -5,40 +5,18 @@
         </div>
         <div id="siteNavToggler" class="title-bar" data-responsive-toggle="siteNav" data-hide-for="medium">
         </div>
-        <div id="siteNav" class="top-bar">
+        <div id="siteNav" class="top-bar top-bar-before">
             <div class="top-bar-title">
-                <img src="{{root}}assets/img/logo_gen.svg" alt="">
+                <img id="logoImage" src="{{root}}assets/img/logo_gen.svg" alt="Genora logo">
             </div>
             <div class="nav-container">
-                <!--<ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <a href="#">who we Are</a>
-                        <ul class="menu vertical">
-                            <li><a href="#">One</a></li>
-                            <li><a href="#">Two</a></li>
-                            <li><a href="#">Three</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">what we do</a>
-                        <ul class="menu vertical">
-                            <li><a href="#">One</a></li>
-                            <li><a href="#">Two</a></li>
-                            <li><a href="#">Three</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">career</a>
-                    </li>
-                </ul>-->
-                <div class="row  align-center">
-                    <div class="column small-3"></div>
-                    <div class="column">
-                      
-                            <ul class="dropdown menu align-center header-dropdown" data-dropdown-menu>
+                <div class="row  align-center height100">
+                    <div class="column "></div>
+                    <div class="column small-12 medium-12 large-7">
+                            <ul class="dropdown menu expanded align-center header-dropdown" data-dropdown-menu data-click-open="true" data-closing-time="50">
                                 <li>
                                     <a href="#" class="header-dropdown-title">WHO WE ARE</a>
-                                    <ul class="menu">
+                                    <ul class="menu header-dropdown-menu ">
                                         <li ><a href="#">Our Journey</a></li>
                                         <li ><a href="#">Our Vision</a></li>
                                         <li ><a href="#">Reach Us</a></li>
@@ -46,7 +24,7 @@
                                 </li>
                                 <li>
                                     <a href="#" class="header-dropdown-title">WHAT WE DO</a>
-                                    <ul class="menu">
+                                    <ul class="menu header-dropdown-menu">
                                         <li><a href="#">Mobile Apps Development</a></li>
                                         <li><a href="#">Offshore IT Setup</a></li>
                                         <li><a href="#">Software Application Development</a></li>
@@ -56,10 +34,13 @@
                             </ul>
                        
                     </div>
-                    <div class="column small-3"></div>
+                    <div class="column "></div>
                 </div>
             </div>
-            <a href="#features" class="button">Request a Quote</a>
+            <div class="flex-center">
+<a href="#features" class="button request-quote">Request a Quote</a>
+            </div>
+           
         </div>
     </div>
 </div>
