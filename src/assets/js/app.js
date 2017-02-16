@@ -3,6 +3,19 @@ var logoSquare = new Image()
 logoSquare.src = "assets/img/logo_gen_h.svg";
 var logoRect = new Image()
 logoRect.src = "assets/img/logo_gen.svg";
+
+
+ $(document).ready(function () {
+    //  $('.c-dropdown').hover(
+    //      function () {
+    //          $(this).children('.c-sub-menu').slideDown(200);
+    //      },
+    //      function () {
+    //          $(this).children('.c-sub-menu').slideUp(200);
+    //      }
+    //  );
+ });
+
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
