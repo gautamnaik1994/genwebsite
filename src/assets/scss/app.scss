@@ -72,8 +72,17 @@ $divider-color: #BDBDBD;
     left: 0;
     right: 0;
     width: 100%;
+    @include breakpoint(small) {
+        position: relative;
+    }
 }
 
+// #siteNavStickyContainer {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     width: 100%;
+// }
 .top-black-bar {
     background-color: black;
     color: rgba(255, 255, 255, 0.71);
