@@ -6,14 +6,14 @@ logoRect.src = "assets/img/logo_gen.svg";
 
 
  $(document).ready(function () {
-    //  $('.c-dropdown').hover(
-    //      function () {
-    //          $(this).children('.c-sub-menu').slideDown(200);
-    //      },
-    //      function () {
-    //          $(this).children('.c-sub-menu').slideUp(200);
-    //      }
-    //  );
+     $('.c-dropdown').hover(
+         function () {
+             $(this).children('.c-sub-menu').slideDown(200);
+         },
+         function () {
+             $(this).children('.c-sub-menu').slideUp(200);
+         }
+     );
  });
 
 $('.owl-carousel').owlCarousel({
