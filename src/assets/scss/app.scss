@@ -72,7 +72,7 @@ $divider-color: #BDBDBD;
     left: 0;
     right: 0;
     width: 100%;
-    @include breakpoint(small) {
+    @include breakpoint(small only) {
         position: relative;
     }
 }
@@ -136,7 +136,7 @@ $divider-color: #BDBDBD;
     .header-dropdown-title {
         color: white;
         padding: 0.5rem 1rem;
-        padding: 0 1rem;
+        
         // margin: 0 12px;
         display: block;
     }
@@ -148,7 +148,8 @@ $divider-color: #BDBDBD;
         &:hover {
             .header-dropdown-title {
                 background-color: #fff;
-                color: $primary-color;
+                font-weight: bold;
+                color: slategray;
             }
         }
     }
@@ -271,12 +272,13 @@ $divider-color: #BDBDBD;
         }
     }
     a {
-        margin: 0;
+        margin:0 0.5rem;
         white-space: nowrap;
         color: #424242;
         font-size: 1rem;
-        padding: 0.5rem;
+        padding: 0.5rem 0;
         display: block;
+        border-bottom: 1px solid $light-gray;
     }
     &.big {
         left: -50%;
