@@ -43,3 +43,38 @@ $(window).scroll(function (event) {
     }
 
 });
+
+var ismenuactv = false;
+var animtime = 700; //Keep this value same as "$animtime" in scss file 
+
+$(document).ready(function () {
+
+    var menu_icon = $('#menu-icon');
+    var c_path = $('#c_path');
+    var t_line = $('#t_line');
+    var f_line = $('#f_line');
+
+    menu_icon.click(function () {
+
+        if (!ismenuactv) {
+            c_path.addClass('path-anim');
+
+            setTimeout(function () {
+                c_path.addClass('cpath-end').removeClass('path-anim');
+                t_line.addClass('linemoveup');
+                f_line.addClass('linemovedown');
+                ismenuactv = true;
+            }, animtime);
+
+        } else {
+
+            c_path.addClass('path-anim-rev');
+            setTimeout(function () {
+                t_line.removeClass('linemoveup');
+                f_line.removeClass('linemovedown');
+                c_path.removeClass('cpath-end path-anim-rev');
+                ismenuactv = false;
+            }, animtime);
+        }
+    });
+});

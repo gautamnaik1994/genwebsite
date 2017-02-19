@@ -1,0 +1,73 @@
+$animtime:0.7s;
+$line-move-time:0.3s;
+svg:hover {
+    cursor: pointer;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 6px;
+}
+
+
+/* Circular Path CSS */
+
+.cpath-ini {
+    stroke-dasharray: 568.1165161132812;
+    stroke-dashoffset: 495;
+}
+
+.cpath-end {
+    stroke-dasharray: 568.1165161132812;
+    stroke-dashoffset: -142;
+}
+
+$animtype:cubic-bezier(.21, .51, 1, .46);
+.path-anim {
+    animation: anim $animtime $animtype;
+}
+
+.path-anim-rev {
+    animation: anim-rev $animtime $animtype;
+}
+
+@keyframes anim {
+    from {
+        stroke-dasharray: 568.1165161132812;
+        stroke-dashoffset: 495;
+    }
+    to {
+        stroke-dasharray: 568.1165161132812;
+        stroke-dashoffset: -142;
+    }
+}
+
+@keyframes anim-rev {
+    from {
+        stroke-dasharray: 568.1165161132812;
+        stroke-dashoffset: -142;
+    }
+    to {
+        stroke-dasharray: 568.1165161132812;
+        stroke-dashoffset: 495;
+    }
+}
+
+
+/* Top and bottom Line CSS */
+
+#t_line,
+#f_line {
+    transition: transform $line-move-time ease-in;
+}
+
+.linemoveup {
+    transform: translateY(-21.5px);
+}
+
+.linemovedown {
+    transform: translateY(21.5px);
+}
