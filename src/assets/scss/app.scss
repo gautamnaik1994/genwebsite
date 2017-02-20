@@ -312,7 +312,18 @@ $divider-color: #BDBDBD;
                padding: 3rem 0;
     }
 }
-
+.section-header{
+    margin-bottom: 2rem;
+    text-align: center;
+.title{
+    display: inline-block;
+    color: $secondary-text-color;
+    padding: 1rem;
+    letter-spacing: 2px;
+    border: 1px solid $secondary-text-color;
+    font-weight: 300;
+}
+}
 .services-home {
     padding:3rem 0;
    
