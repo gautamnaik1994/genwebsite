@@ -1,4 +1,5 @@
 $(document).foundation();
+new WOW().init();
 var logoSquare = new Image()
 logoSquare.src = "assets/img/logo_gen_h.svg";
 var logoRect = new Image()
@@ -16,7 +17,7 @@ logoRect.src = "assets/img/logo_gen.svg";
      );
  });
 
-$('.owl-carousel').owlCarousel({
+$('#topCarousel').owlCarousel({
     loop: true,
     margin: 10,
     autoplay: true,
@@ -25,7 +26,20 @@ $('.owl-carousel').owlCarousel({
             items: 1
         }
     }
+ });
+
+$('#portfolioCarousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        }
+    }
 });
+
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();

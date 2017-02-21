@@ -54,10 +54,12 @@ $accent-color: #FFC107;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
+$blackwhite:#808080;
 @import 'components/helpers';
 @import 'components/menuicon';
 @import 'components/owl.carousel';
 @import 'components/owl.theme.default';
+@import 'components/animate';
 //font: Josefin Sans,QuckSand
 #siteContainer {
     position: relative;
@@ -317,15 +319,15 @@ $divider-color: #BDBDBD;
     text-align: center;
 .title{
     display: inline-block;
-    color: $secondary-text-color;
+  color: $blackwhite;;
     padding: 1rem;
     letter-spacing: 2px;
-    border: 1px solid $secondary-text-color;
+    border: 1px solid $blackwhite;
     font-weight: 300;
 }
 }
 .services-home {
-    padding:3rem 0;
+    padding:2rem 0.3rem 3rem;
    
     .title {
         margin-top: 1rem;
@@ -338,7 +340,13 @@ $divider-color: #BDBDBD;
        
     }
     p{
-      
+      font-size: 0.8rem  ;
         
     }
+}
+.portfolio-bg{
+background: #485563;
+background: -webkit-linear-gradient(to left, #485563, #29323c);
+background: linear-gradient(to left, #485563, #29323c);
+padding: 3rem 0;
 }
