@@ -327,6 +327,7 @@ $blackwhite:#808080;
 }
 }
 .services-home {
+    
     padding:2rem 0.3rem 3rem;
    
     .title {
@@ -337,6 +338,7 @@ $blackwhite:#808080;
     img {
         height: 150px;
         width: auto;
+              
        
     }
     p{
@@ -349,4 +351,20 @@ background: #485563;
 background: -webkit-linear-gradient(to left, #485563, #29323c);
 background: linear-gradient(to left, #485563, #29323c);
 padding: 3rem 0;
+}
+.what-we-do{
+    margin-bottom: 2rem;
+  .title{
+      font-weight: 300;
+      color: $primary-color;
+  }
+  img{
+      width: 250px;
+}
+
+footer{
+    background-color:black;
+    padding: 3rem;
+    margin-top: 5rem;
+
 }

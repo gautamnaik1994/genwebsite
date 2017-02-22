@@ -1,3 +1,21 @@
+
+// window.onload
+
+// When do they fire ?
+
+//     window.onload
+
+// By
+// default, it is fired when the entire page loads, including its content(images, css, scripts, etc.)
+// In some browsers it now takes over the role of document.onload and fires when the DOM is ready as well.
+// document.onload
+
+// It is called when the DOM is ready which can be prior to images and other external content is loaded.
+
+
+
+
+
 $(document).foundation();
 new WOW().init();
 var logoSquare = new Image()
@@ -90,5 +108,18 @@ $(document).ready(function () {
                 ismenuactv = false;
             }, animtime);
         }
+    });
+});
+
+$(document).ready(function () {
+    var movementStrength = 25;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+    $(".home-top-container").mousemove(function (e) {
+        var pageX = e.pageX - ($(window).width() / 2);
+        var pageY = e.pageY - ($(window).height() / 2);
+        var newvalueX = width * pageX * -3 ;
+        var newvalueY = height * pageY * -3;
+        $('.home-top-container').css("background-position", newvalueX + "px     " + newvalueY + "px");
     });
 });
